@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Réservez votre table au restaurant Le Demi-Sel à La Chapelle-sur-Loire.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css/reset.css">
+    <link rel="stylesheet" href="style.css/colors.css">
+    <link rel="stylesheet" href="style.css/typo.css">
+    <link rel="stylesheet" href="style.css/header.css">
+    <link rel="stylesheet" href="style.css/reservations.css">
+    <link rel="stylesheet" href="style.css/footer.css">
+    <title>Réservations - Restaurant Le Demi-Sel</title>
+</head>
+ <header>
+        <nav aria-label="Navigation principale">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Reservations.html" aria-current="page">Réservations</a>
+            <a href="contacts et infos.html">Contacts et informations</a>
+        </nav>
+        <div class="bigtitle">
+            <h1>Réservez votre table</h1>
+        </div>
+    </header>
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+    <main id="contenu">
+        <section class="reservation-form">
+            <h2>Votre demande de réservation</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+                    <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+                    <label for="email">Adresse email :</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" autocomplete="tel" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Informations concernant votre réservation</legend>
+                    <label for="date">Date souhaitée :</label>
+                        <input type="date" id="date" name="date" required>
+                    <label for="heure">Heure souhaitée :</label>
+                    <select id="heure" name="heure" required>
+                        <option value="">Choisissez une heure</option>
+                        <option>12h00</option>
+                        <option>12h30</option>
+                        <option>13h00</option>
+                        <option>13h30</option>
+                        <option>19h00</option>
+                        <option>19h30</option>
+                        <option>20h00</option>
+                        <option>20h45</option>
+                    </select>
+                    <label for="personnes">Nombre de personnes :</label>
+                    <input type="number" id="personnes" name="personnes" min="1" max="20" required>
+                    <label for="message">Demande particulière :</label>
+                    <textarea id="message" name="message" placeholder="Allergies, accessibilité, demande spéciale..."></textarea>
+                </fieldset>
+                <button type="submit">Envoyer ma demande</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2026 Gwénaëlle SORIN. Tous droits réservés.</p>
+        <p>Ceci est un site fictif créé dans le cadre d'un projet de formation. Les contenus utilisés sont vus en amont avec leurs propriétaires.
+        Toute reproduction est interdite sans autorisation préalable.</p>
+    </footer>
+</body>
+</html>
