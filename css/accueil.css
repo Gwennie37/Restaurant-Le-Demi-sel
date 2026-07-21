@@ -1,0 +1,142 @@
+body {
+    background:
+        linear-gradient(
+            var(--background-veil),
+            var(--background-veil)
+        ),
+        var(--background-image);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.skip-link {
+    position:absolute;
+    top:-60px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--h2);
+    color: var(--text);
+    padding:12px 25px;
+    border-radius:8px;
+    z-index:1000;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+.skip-link:focus {
+    top:20px;
+}
+
+.intro-text {
+    width:100%;
+    max-width:1200px;
+    margin:50px auto;
+    padding:40px;
+    background:rgba(255,255,255,0.82);
+    box-shadow:0 5px 15px var(--shadow);
+    text-align:center;
+}
+
+.intro-text h2 {
+    color:var(--h2);
+    font-family:"Agbalumo", serif;
+    font-size:2.5rem;
+    margin-bottom:25px;
+}
+
+.intro-text p {
+    color:var(--text);
+    font-size:1.3rem;
+    line-height:1.6;
+    text-align:center;
+    max-width:70ch;
+    margin:10px auto;
+}
+
+.intro-grid {
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:35px;
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.intro-card {
+    background:rgba(255,255,255,0.82);
+    padding:30px;
+    box-shadow:0 5px 15px var(--shadow);
+}
+
+.intro-card h2 {
+    display: flex;
+    text-align:center;
+    color:var(--h2);
+    margin-bottom:25px;
+}
+
+.presentation {
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.presentation p {
+    text-align:left;
+    color:var(--text);
+    font-size:1rem;
+    line-height:1.6;
+}
+
+.presentation img {
+    width:100%;
+    max-height:450px;
+    object-fit:cover;
+}
+
+.plate-images {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.plate-images img {
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:transform 0.2s ease;
+}
+
+.plate-images img:hover {
+    transform:scale(1.03);
+}
+
+img:focus-visible {
+    outline:4px solid var(--accent);
+}
+
+@media(max-width:600px){
+    .intro-card {
+        padding:20px;
+    }
+    .plate-images {
+        grid-template-columns:1fr;
+    }
+    .skip-link {
+        top:-200px;
+    }
+    .skip-link:focus {
+        top:-200px;
+    }
+}
+
+@media(max-width:900px){
+
+    .intro-text{
+        width: 90%;;
+    }
+    .intro-grid {
+        grid-template-columns:1fr;
+    }
+}

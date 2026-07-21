@@ -1,0 +1,20 @@
+:root {
+    --text: #3B1F16;
+    --background: #F4E7D3;
+    --h1: #6B1E1E;
+    --h2: #7A2E2E;
+    --h3: #7A2E2E;
+    --h4: #7A2E2E;
+    --h5: #7A2E2E;
+    --h6: #7A2E2E;
+    --nav: #6B1E1E;
+    --nav-hover: #B06B3C;
+    --button: #7A2E2E;
+    --button-hover: #9C4545;
+    --accent: #C28B4A;
+    --background-image: url("../img/LaChapelle.png");
+    --background-veil: rgba(244,231,211,0.78);
+    --background-menu: url("../img/menu2.PNG");
+    --shadow:
+    rgba(0,0,0,0.15);
+}

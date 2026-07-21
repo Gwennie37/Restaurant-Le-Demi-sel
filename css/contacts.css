@@ -1,0 +1,179 @@
+body {
+ background:
+        linear-gradient(
+            var(--background-veil),
+            var(--background-veil)
+        ),
+        var(--background-image);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.skip-link {
+    position:absolute;
+    top:-60px;
+    left:50%;
+    transform:translateX(-50%);
+    background:var(--h2);
+    color: var(--text);
+    padding:12px 25px;
+    border-radius:8px;
+    z-index:1000;
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+.skip-link:focus {
+    top:20px;
+}
+
+main {
+    width:100%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+section {
+    background:rgba(255,255,255,0.82);
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 5px 15px var(--shadow);
+}
+
+h2 {
+    text-align:center;
+    font-family:"Agbalumo", serif;
+    color:var(--h2);
+    font-size:2.3rem;
+    margin-bottom:20px;
+}
+
+p {
+    color:var(--text);
+    font-size:1.15rem;
+    line-height:1.6;
+    text-align:left;
+    max-width:75ch;
+    margin:12px auto;
+}
+
+.horaires {
+    max-width:600px;
+    margin:25px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.jour {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 20px;
+    background:rgba(255,255,255,0.55);
+    color:var(--text);
+    font-size:1.1rem;
+}
+
+.jour span:first-child {
+    font-weight:bold;
+    color:var(--h2);
+}
+
+.jour {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 20px;
+    border-bottom:1px solid rgba(139, 69, 19, 0.2);
+}
+
+.jour:last-child {
+    border-bottom:none;
+}
+
+@media(max-width:700px){
+    .jour {
+        flex-direction:column;
+        gap:6px;
+        text-align:center;
+    }
+}
+
+.reseaux {
+    margin-top:20px;
+}
+
+.reseaux ul {
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.reseaux li {
+    list-style:none;
+}
+
+.reseaux a {
+    display:inline-block;
+    padding:12px 25px;
+    background:var(--button);
+    color:white;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.2s;
+    margin-top: 20px;
+}
+
+.reseaux a:hover {
+    background:var(--button-hover);
+}
+
+.reseaux a:focus {
+    outline:4px solid var(--accent);
+    outline-offset:3px;
+}
+
+iframe {
+    display:block;
+    width:100%;
+    max-width:800px;
+    height:450px;
+    margin:30px auto;
+    border:0;
+    border-radius:15px;
+}
+
+@media(max-width:700px){
+main {
+    width:95%;
+    padding:10px;
+}
+section {
+    padding:20px;
+}
+h2 {
+    font-size:1.8rem;
+}
+p {
+    font-size:1rem;
+}
+iframe {
+    height:300px;
+}
+    .skip-link {
+        top:-200px;
+    }
+    .skip-link:focus {
+        top:-200px;
+    }
+}
+
+@media(max-width:900px){
+    .intro-grid {
+        grid-template-columns:1fr;
+    }
+}
+
