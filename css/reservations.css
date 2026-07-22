@@ -1,5 +1,5 @@
 body {
-     background:
+     background: red !important;
         linear-gradient(
             var(--background-veil),
             var(--background-veil)
