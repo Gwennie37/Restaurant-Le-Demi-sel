@@ -1,0 +1,23 @@
+header {
+    width: 95%;
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(125, 211, 252, 0.08);
+    border: 1px solid rgba(125, 211, 252, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(125, 211, 252, 0.15);
+}
+
+h1 {
+    font-family: var(--h1);
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--p);
+    font-size: 28px;
+    margin-top: 10px;
+    opacity: 0.8;
+}
