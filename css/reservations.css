@@ -1,8 +1,9 @@
 body {
-background:
+     background:
         linear-gradient(
             var(--background-veil),
-            var(--background-veil)),
+            var(--background-veil)
+        ),
         var(--background-image);
     background-size:cover;
     background-position:center;
