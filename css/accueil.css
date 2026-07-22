@@ -108,10 +108,6 @@ body {
     transition:transform 0.2s ease;
 }
 
-.plate-images img:hover {
-    transform:scale(1.03);
-}
-
 img:focus-visible {
     outline:4px solid var(--accent);
 }
